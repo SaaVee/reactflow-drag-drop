@@ -52,6 +52,32 @@ const ArchServiceIcons = () => {
               <br />
               <span>VPC</span>
             </li>
+            <li>
+              <img
+                src={VPCIcon}
+                alt="vpc icon"
+                title={"Subnet"}
+                className="dndnode"
+                onDragStart={(event) => onDragStart(event, "subnet")}
+                type="subnetComponent"
+                draggable
+              />
+              <br />
+              <span>SUBNET</span>
+            </li>
+            <li>
+              <img
+                src={VPCIcon}
+                alt="security icon"
+                title={"SECURITY"}
+                className="dndnode"
+                onDragStart={(event) => onDragStart(event, "security")}
+                type="securityComponent"
+                draggable
+              />
+              <br />
+              <span>SECURITY</span>
+            </li>
           </ul>
         </AccordionDetails>
       </Accordion>

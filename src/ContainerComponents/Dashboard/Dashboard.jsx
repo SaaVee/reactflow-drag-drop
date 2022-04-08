@@ -100,7 +100,8 @@ export const Dashboard = () => {
     });
     let newNode = {};
     let temp = JSON.parse(JSON.stringify(elements));
-    if (index === -1) {
+    debugger
+    if (!elements.length) {
       newNode = {
         id: "dndnode_" + id,
         type: "ec2Component",
@@ -112,10 +113,10 @@ export const Dashboard = () => {
           setShowPropertyEditPanel: showPropertyPanelFor,
           properties: {
             id: "dndnode_" + id,
-            showEc2: false,
-            showSecurity: false,
-            showSubnet: false,
-            showVpc: true,
+            showEc2: type === "ec2",
+            showSecurity: type === "security",
+            showSubnet: type === "subnet",
+            showVpc: type === "vpc",
             showSecurityConfig: false,
             showSubnetConfig: false,
             showVpcConfig: false,
@@ -141,13 +142,21 @@ export const Dashboard = () => {
       };
       temp = [newNode];
     } else {
-      newNode = elements[index];
+      newNode = elements[0];
       newNode.position = position;
       if (type === "vpc") {
-        newNode.data.properties.showEc2 = true;
         newNode.data.properties.showVpc = true;
       }
-      temp[index] = newNode;
+      if (type === "ec2") {
+        newNode.data.properties.showEc2 = true;
+      }
+      if (type === "security") {
+        newNode.data.properties.showSecurity = true;
+      }
+      if (type === "subnet") {
+        newNode.data.properties.showSubnet = true;
+      }
+      temp[0] = newNode;
     }
     const data = {};
     for (let index = 0; index < elements.length; index++) {

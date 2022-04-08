@@ -1,79 +1,90 @@
 import React from "react";
 import "./Ec2Component.scss";
 import Ec2Icon from "../../Assets/img/Ec2_icon_fix.svg";
+import { useEffect } from "react";
 
 const Ec2Component = ({ data = {} }) => {
   const { properties } = data;
-  console.log(properties);
+  const vpcName = properties?.vpc?.name || "vpc";
+  console.log(vpcName);
   return (
-    <div>
-      <div className="ec2-element">
-        {
-          properties.showEc2 ?
-            <div>
-              <img
-                // ref={ref}
-                alt="Ec2 Icon"
-                src={Ec2Icon}
-                className="ec2-image"
-                onClick={() => {
-                  data.setShowPropertyEditPanel(properties.id, "ec2");
-                }}
-              />
-            </div>
-            : ""
-        }
-        {properties?.showSecurity ? (
-          <div>
-            <div
-              className="security-section"
-              onClick={() => {
-                data.setShowPropertyEditPanel(properties.id, "security");
-              }}
-            >
-              <div className="security-name">
-                <p>{properties?.security?.name || "security"}</p>
+    <>
+      <div>
+        <div className="ec2-element">
+          {
+            properties.showEc2 ?
+              <div>
+                <img
+                  // ref={ref}
+                  alt="Ec2 Icon"
+                  src={Ec2Icon}
+                  className="ec2-image"
+                  onClick={() => {
+                    data.setShowPropertyEditPanel(properties.id, "ec2");
+                  }}
+                />
               </div>
-              <div className="security-box"></div>
+              : ""
+          }
+          {properties?.showSecurity ? (
+            <div>
+              <div style={{ visibility: 'hidden' }}>+</div>
+              <div
+                className="security-section"
+                onClick={() => {
+                  data.setShowPropertyEditPanel(properties.id, "security");
+                }}
+              >
+                <div className="security-name">
+                  <p>{properties?.security?.name || "security"}</p>
+                </div>
+                <div className="security-box"></div>
+              </div>
             </div>
-          </div>
-        ) : (
-          ""
-        )}
+          ) : (
+            ""
+          )}
 
-        {properties?.showSubnet ? (
-          <div
-            className="security-section subnet-section"
-            onClick={() => {
-              data.setShowPropertyEditPanel(properties.id, "subnet");
-            }}
-          >
-            <div className="security-name subnet-name">
-              <p>{properties?.subnet?.name || "subnet"}</p>
+          {properties?.showSubnet ? (
+            <div>
+              <div style={{ visibility: 'hidden' }}>+</div>
+              <div
+                className="security-section subnet-section"
+                onClick={() => {
+                  data.setShowPropertyEditPanel(properties.id, "subnet");
+                }}
+              >
+                <div className="security-name subnet-name">
+                  <p>{properties?.subnet?.name || "subnet"}</p>
+                </div>
+                <div className="security-box subnet-box"></div>
+              </div>
             </div>
-            <div className="security-box subnet-box"></div>
-          </div>
-        ) : (
-          ""
-        )}
+          ) : (
+            ""
+          )}
 
-        {properties?.showVpc ? (
-          <div
-            className="security-section vpc-section"
-            onClick={() => {
-              data.setShowPropertyEditPanel(properties.id, "vpc", properties);
-            }}
-          >
-            <div className="security-name vpc-name">
-              <p>{properties?.vpc.name || "vpc"}</p>
+          {properties?.showVpc ? (
+            <div>
+              <div style={{ visibility: 'hidden' }}>+</div>
+              <div
+                className="security-section vpc-section"
+                onClick={() => {
+                  data.setShowPropertyEditPanel(properties.id, "vpc", properties);
+                }}
+              >
+                <div className="security-name vpc-name">
+                  <p>{properties?.vpc.name || "vpc"}</p>
+                </div>
+                <div className="security-box vpc-box"></div>
+              </div>
             </div>
-            <div className="security-box vpc-box"></div>
-          </div>
-        ) : (
-          ""
-        )}
+          ) : (
+            ""
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

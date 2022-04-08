@@ -21,7 +21,7 @@ const AppHeader = () => {
   return (
     <header className='app-header-wrapper'>
       <div className='w-50'>
-        <img src={'https://cdn.dribbble.com/users/13938/screenshots/2052072/media/cf12df49fd67f56774e391895eab061c.gif'} alt="" srcset="" />
+        <img src={'https://cdn.dribbble.com/users/13938/screenshots/2052072/media/cf12df49fd67f56774e391895eab061c.gif'} alt=""/>
       </div>
       <div className='w-50 login-register'>
         {

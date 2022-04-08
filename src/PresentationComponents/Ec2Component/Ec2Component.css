@@ -1,79 +1,85 @@
 .ec2-element {
-  position: relative;
-  width: 300px;
+    position: relative;
+    width: 300px;
 }
 
 .ec2-element .ec2-image {
-  position: relative;
-  z-index: 9999;
-  width: 100px;
+    position: relative;
+    z-index: 9999;
+    width: 100px;
 }
 
 .ec2-element .security-section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 .ec2-element .security-section .security-name {
-  font-size: 14px;
-  color: white;
-  font-weight: 700;
-  background: #3f51b5;
-  position: absolute;
-  left: -86px;
-  top: -50px;
-  padding: 30px 0;
-  width: 40px;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    background: #3f51b5;
+    position: absolute;
+    left: -86px;
+    top: -50px;
+    padding: 30px 0;
+    width: 40px;
 }
 
 .ec2-element .security-section .security-name p {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .ec2-element .security-section .security-box {
-  background: transparent;
-  border: 4px solid #3f51b5;
-  width: 202px;
-  height: 202px;
-  margin: -50px 0 0 -50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    background: transparent;
+    border: 4px solid #3f51b5;
+    width: 202px;
+    height: 202px;
+    margin: -50px 0 0 -50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .ec2-element .subnet-section {
-  z-index: 99;
+    z-index: 99;
 }
 
 .ec2-element .subnet-section .subnet-name {
-  background: #a002a0;
-  left: -186px;
-  top: -150px;
+    background: #a002a0;
+    left: -186px;
+    top: -150px;
 }
 
 .ec2-element .subnet-section .subnet-box {
-  width: 403px;
-  height: 403px;
-  margin: -150px 0 0 -150px;
-  border: 4px dashed #a002a0;
+    width: 403px;
+    height: 403px;
+    margin: -150px 0 0 -150px;
+    border: 4px dashed #a002a0;
 }
 
 .ec2-element .vpc-section {
-  z-index: 9;
+    z-index: 9;
 }
 
 .ec2-element .vpc-section .vpc-name {
-  background: #0175e2;
-  left: -286px;
-  top: -250px;
+    background: #0175e2;
+    left: -286px;
+    top: -250px;
 }
 
 .ec2-element .vpc-section .vpc-box {
-  width: 603px;
-  height: 603px;
-  margin: -250px 0 0 -250px;
-  border: 4px solid #0175e2;
+    width: 603px;
+    height: 603px;
+    margin: -250px 0 0 -250px;
+    border: 4px solid #0175e2;
 }
+
+
 /*# sourceMappingURL=Ec2Component.css.map */
+
+.react-flow__node {
+    opacity: 1 !important;
+}
