@@ -1,0 +1,27 @@
+.register-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-wrapper .register {
+  width: 30%;
+  border: 1px solid #000;
+  padding: 2rem;
+  padding-top: 1rem;
+}
+
+.register-wrapper .register header {
+  background: #f2f2f2;
+  color: #45b0db;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=Register.css.map */

@@ -1,0 +1,40 @@
+.app-header-wrapper {
+  -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+}
+
+.app-header-wrapper img {
+  width: 4rem;
+  margin-left: 1rem;
+  display: block;
+}
+
+.app-header-wrapper .login-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.app-header-wrapper .login-register span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.app-header-wrapper .login-register .user-name {
+  margin-left: 10px;
+  font-weight: 400;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=AppHeader.css.map */

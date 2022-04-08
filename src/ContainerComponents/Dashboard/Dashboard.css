@@ -1,0 +1,96 @@
+.dashboard-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.dashboard-wrapper .deploy-button {
+  background: #5db031;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 25px 40px 0;
+}
+
+.dashboard-wrapper .delete-button {
+  background: #0779eb;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  margin: 7px 0 0 0;
+}
+
+.dashboard-wrapper .header {
+  padding: 25px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.dashboard-wrapper .header .container {
+  max-width: 1440px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dashboard-wrapper .diagram-page {
+  width: 100%;
+  height: 100vh;
+  background: #f7f6f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.dashboard-wrapper .diagram-page .diagram-page-left-panel {
+  width: 17%;
+  height: 100vh;
+  background: #fff;
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-wrapper .diagram-page .diagram-page-left-panel .css-16awh2u-MuiAutocomplete-root {
+  margin: 20px;
+}
+
+.dashboard-wrapper .diagram-page .diagram-page-left-panel .css-16awh2u-MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dashboard-wrapper .diagram-page .diagram-page-playground {
+  width: 66%;
+  height: 90vh;
+}
+
+.dashboard-wrapper .diagram-page .diagram-page-right-panel {
+  width: 17%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.08);
+}
+/*# sourceMappingURL=Dashboard.css.map */

@@ -1,0 +1,85 @@
+.select-vpc {
+  position: relative;
+}
+
+.select-vpc h2 {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.select-vpc .properties-row {
+  margin-bottom: 20px;
+}
+
+.select-vpc .properties-row .MuiInput-root {
+  width: 100%;
+  font-size: 15px;
+}
+
+.select-vpc .properties-row h3 {
+  color: #757575;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.select-vpc .properties-row .subnet-select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.select-vpc .properties-row .subnet-select-container .subnet-selector {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.select-vpc .add-to-vpc {
+  position: absolute;
+  background: #fff;
+  -webkit-box-shadow: #00000033 0px 5px 5px -3px, #00000024 0px 8px 10px 1px, #0000001f 0px 3px 14px 2px;
+          box-shadow: #00000033 0px 5px 5px -3px, #00000024 0px 8px 10px 1px, #0000001f 0px 3px 14px 2px;
+  z-index: 9;
+  border: 1px solid #ccc;
+  top: 20px;
+  right: 0;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.select-vpc .add-to-vpc .vpc-list .vpc-item {
+  background: #009688;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.select-vpc .add-to-vpc .vpc-list .vpc-item p {
+  margin: 0;
+}
+
+.select-platform {
+  margin-top: 20px;
+}
+
+.select-instance {
+  margin-top: 20px;
+}
+
+.element-properties .select-region {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=PropertiesPanel.css.map */

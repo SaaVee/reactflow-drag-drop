@@ -1,0 +1,75 @@
+.select-vpc {
+  position: relative;
+
+  h2 {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .properties-row {
+    margin-bottom: 20px;
+
+    .MuiInput-root {
+      width: 100%;
+      font-size: 15px;
+    }
+    h3 {
+      color: #757575;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .subnet-select-container {
+      display: flex;
+      margin-top: 10px;
+
+      .subnet-selector {
+        margin-right: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  .add-to-vpc {
+    position: absolute;
+    background: #fff;
+    box-shadow: #00000033 0px 5px 5px -3px, #00000024 0px 8px 10px 1px,
+      #0000001f 0px 3px 14px 2px;
+    z-index: 9;
+    border: 1px solid #ccc;
+    top: 20px;
+    right: 0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 350px;
+    box-sizing: border-box;
+    // display: none;
+    .vpc-list {
+      .vpc-item {
+        background: #009688;
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.select-platform {
+  margin-top: 20px;
+}
+
+.select-instance {
+  margin-top: 20px;
+}
+
+.element-properties {
+  .select-region {
+    margin-top: 20px;
+  }
+}
